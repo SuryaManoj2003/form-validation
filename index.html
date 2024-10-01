@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <div class="header">
+          <h2>Register here</h2>
+        </div>
+        <form class="form" id="form">
+          <div class="field field-1">
+            <label>Username</label>
+            <input type="text" id="uname" placeholder="Enter username" />
+            <span class="success"
+              ><i class="fa-solid fa-circle-check"></i
+            ></span>
+            <div class="error-container">
+              <span class="error"
+                ><i class="fa-solid fa-circle-exclamation"></i
+              ></span>
+              <small>Error</small>
+            </div>
+          </div>
+          <div class="field field-2">
+            <label>Email</label>
+            <input type="email" id="email" placeholder="user@gmail.com" />
+            <span class="success"
+              ><i class="fa-solid fa-circle-check"></i
+            ></span>
+            <div class="error-container">
+              <span class="error">
+                <i class="fa-solid fa-circle-exclamation"></i
+              ></span>
+              <small>Error</small>
+            </div>
+          </div>
+          <div class="field field-3">
+            <label>Password</label>
+            <input type="password" id="password" placeholder="Password" />
+            <span class="success"
+              ><i class="fa-solid fa-circle-check"></i
+            ></span>
+            <div class="error-container">
+              <span class="error"
+                ><i class="fa-solid fa-circle-exclamation"></i
+              ></span>
+              <small>Error</small>
+            </div>
+          </div>
+          <div class="field field-4">
+            <label>Confirm Password</label>
+            <input
+              type="password"
+              id="confirm-password"
+              placeholder="Confirm Password"
+            />
+            <span class="success"
+              ><i class="fa-solid fa-circle-check"></i
+            ></span>
+            <div class="error-container">
+              <span class="error"
+                ><i class="fa-solid fa-circle-exclamation"></i
+              ></span>
+              <small>Error</small>
+            </div>
+          </div>
+          <div class="field field-5">
+            <input type="checkbox" name="" id="terms" class="terms" />
+            <span class="terms-text">I agree to terms and conditions</span>
+            <small class="terms-error">! Please accept the conditions</small>
+          </div>
+          <div class="field field-6">
+            <input type="submit" value="submit" class="submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
